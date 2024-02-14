@@ -11,20 +11,20 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     dice3d.addDicePreset({
       type:"dw",
       labels:[
-        'modules/memento-mori-csb-es/assets/images/WhiteFace1.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace2.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace3.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace4.webp',
-        'modules/memento-mori-csb-es/assets/images/WhiteFace5.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace6.webp'
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace1.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace2.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace3.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace4.webp',
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace5.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace6.webp'
       ],
       bumpMaps:[
-        'modules/memento-mori-csb-es/assets/images/WhiteFace1.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace2.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace3.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace4.webp',
-        'modules/memento-mori-csb-es/assets/images/WhiteFace5.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace6.webp'
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace1.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace2.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace3.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace4.webp',
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace5.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace6.webp'
       ],
 	  colorset:"whiteMM",
       system: "MMDice"
@@ -32,20 +32,20 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
 	dice3d.addDicePreset({
       type:"db",
       labels:[
-        'modules/memento-mori-csb-es/assets/images/BlackFace1.webp', 
-        'modules/memento-mori-csb-es/assets/images/BlackFace2.webp', 
-        'modules/memento-mori-csb-es/assets/images/BlackFace3.webp', 
-        'modules/memento-mori-csb-es/assets/images/BlackFace4.webp',
-        'modules/memento-mori-csb-es/assets/images/BlackFace5.webp', 
-        'modules/memento-mori-csb-es/assets/images/BlackFace6.webp'
+        'modules/memento-mori-csb-enit/assets/images/BlackFace1.webp', 
+        'modules/memento-mori-csb-enit/assets/images/BlackFace2.webp', 
+        'modules/memento-mori-csb-enit/assets/images/BlackFace3.webp', 
+        'modules/memento-mori-csb-enit/assets/images/BlackFace4.webp',
+        'modules/memento-mori-csb-enit/assets/images/BlackFace5.webp', 
+        'modules/memento-mori-csb-enit/assets/images/BlackFace6.webp'
       ],
       bumpMaps:[
-        'modules/memento-mori-csb-es/assets/images/WhiteFace1.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace2.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace3.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace4.webp',
-        'modules/memento-mori-csb-es/assets/images/WhiteFace5.webp', 
-        'modules/memento-mori-csb-es/assets/images/WhiteFace6.webp'
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace1.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace2.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace3.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace4.webp',
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace5.webp', 
+        'modules/memento-mori-csb-enit/assets/images/WhiteFace6.webp'
       ],
 	  colorset:"blackMM",
       system: "MMDice"

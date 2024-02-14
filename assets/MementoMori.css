@@ -1,0 +1,526 @@
+@font-face {
+    font-family: "MementoMori";
+    src: url("../assets/fonts/MementomoriDistortSpanishCharacters-Regular.otf");
+}
+@font-face {
+    font-family: "BookAntiqua";
+    src: url("../assets/fonts/BKANT.TTF");
+}
+.dice-tooltip{
+    display:block !important;
+}
+.mmwhite {
+	 width: 15%;
+}
+.mmblack {
+	 width: 15%;
+}
+.mmwhite img{
+	border: 0px;
+}
+.mmblack img{
+	border: 0px;
+}
+.dice-tooltip .dice-rolls .roll.max {
+	filter: none;
+}
+.dice-tooltip .dice-rolls .roll.min {
+	filter: none;
+}
+.window-app .window-content {
+	background: url(../assets/images/FondoMementoMori2.webp);
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	font-family:'BookAntiqua';
+}
+.custom-system-actor-content {
+	padding:20px;
+}
+.titlememento {
+	font-family:'MementoMori';
+	font-size:35px;
+	height:30px;
+	margin:0px;
+}
+.tabpanel nav{
+	font-family:'MementoMori';
+	font-size: 30px;
+	padding:0px;
+	color: #575757;
+}
+.tabpanel .item.active{
+	text-decoration: underline;
+	color:black;
+}
+.custom-system-actor nav.sheet-tabs {
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:10px;
+	height:35px;
+	align-items: center;
+	border-top:0px;
+	border-bottom: 2px solid #bdb6b4;
+}
+.imageorgans{
+	height:150px;
+	margin-top:10px;
+	margin-left:0px;
+}
+.imageorgans img{
+	border:0px;
+	max-height:150px;
+	max-width:150px;
+	width:100%;
+	height:100%;
+}
+.checkboxstyle1  input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url(../assets/images/Checkbox1.webp);
+	background-size:35px;
+	background-repeat: no-repeat;
+	flex: 0 0 35px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.checkboxstyle1 input[type="checkbox"]:checked {
+    background: url(../assets/images/Checkbox1_filled.webp);
+	background-size:35px;
+	-webkit-filter: none !important;
+}
+.checkboxstyle1 {
+	margin:5px;
+	gap:0px;
+}
+.checkboxstyle1blocked input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url(../assets/images/Checkbox1_filled.webp);
+	background-size:35px;
+	background-repeat: no-repeat;
+	flex: 0 0 35px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.checkboxstyle1blocked input[type="checkbox"]:checked {
+    background: url(../assets/images/Checkbox1_filled.webp);
+	background-size:35px;
+	-webkit-filter: none !important;
+}
+.checkboxstyle1blocked {
+	margin:5px;
+	gap:0px;
+}
+.panelchecks1 {
+	display:grid;
+	grid-template-columns: auto auto auto;
+	gap:0px;
+}
+.textorgans {
+	margin:0px;
+}
+.panelblood {
+	margin-top: 30px;
+}
+.panelmarkdream {
+	display:grid;
+	grid-template-columns: 10% 85%;
+}
+.panelmarkdreamita {
+	display:grid;
+	grid-template-columns: 15% 80%;
+}
+.dremainput {
+	width: 100%;
+}
+.dreaminput input{
+	background-color: #FF000000;
+	border-bottom:1.5px solid;
+	border-color: #bdb6b4;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-radius: 0px 0px 0px 0px;
+}
+.stigmacheck input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url(../assets/images/Checkbox2.webp);
+	background-size:25px;
+	background-repeat: no-repeat;
+	flex: 0 0 25px;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+.stigmacheck input[type="checkbox"]:checked {
+    background: url(../assets/images/Checkbox2_filled.webp);
+	background-size:25px;
+	-webkit-filter: none !important;
+	background-repeat: no-repeat;
+}
+.stigmacheck {
+	margin:2px;
+	gap:0px;
+}
+.panelstigma {
+	display:grid;
+	grid-template-columns: auto auto;
+}
+.panelstigma2 {
+	border-top:1.5px solid;
+	border-left: 1.5px solid;
+	border-color: #bdb6b4;
+	padding-top:10px;
+	margin-top:30px;
+	border-radius: 5px 0px 0px 0px;
+}
+.panelmark {
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top: 5px;
+	border-bottom:1.5px solid;
+	border-left: 1.5px solid;
+	border-color: #bdb6b4;
+	border-radius: 0px 0px 0px 5px;
+}
+.panelchecks2 {
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	gap:0px;
+}
+.organstigmacheck input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url(../assets/images/Checkbox3.webp);
+	background-size:15px;
+	background-repeat: no-repeat;
+	flex: 0 0 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.organstigmacheck input[type="checkbox"]:checked {
+    background: url(../assets/images/Checkbox3_filled.webp);
+	background-size:15px;
+	-webkit-filter: none !important;
+	background-repeat: no-repeat;
+}
+.organstigmacheck {
+	margin:2px;
+	gap:0px;
+}
+.organstigmacheckfake input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url(../assets/images/Checkbox3_fake.webp);
+	background-size:15px;
+	background-repeat: no-repeat;
+	flex: 0 0 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.organstigmacheckfake input[type="checkbox"]:checked {
+    background: url(../assets/images/Checkbox3_fake.webp);
+	background-size:15px;
+	-webkit-filter: none !important;
+	background-repeat: no-repeat;
+}
+.organstigmacheckfake {
+	margin:2px;
+	gap:0px;
+}
+.panelboxes {
+	font-size:12px;
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:5px;
+}
+.panelbond {
+	display:grid;
+	grid-template-columns: auto 40% 44%;
+	gap:5px;
+}
+.bondinputcorrupted {
+	background-color: #FF000000;
+	border-bottom:1.5px solid;
+	border-color: #bdb6b4;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-radius: 0px 0px 0px 0px;
+	text-decoration: line-through;
+}
+.bondinput input{
+	background-color: #FF000000;
+	border-bottom:1.5px solid;
+	border-color: #bdb6b4;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-radius: 0px 0px 0px 0px;
+}
+.panelbondtitle {
+	font-size: 17px;
+	font-weight: 700;
+	margin-top: 19px;
+}
+.panelbondtitle input{
+	font-size: 17px;
+	font-weight: 700;
+}
+.panelkey {
+	margin-top: 19px;
+}
+.titlegift {
+	font-weight:700;
+	font-size: 20px;
+	align-items:flex-start;
+}
+.panelgift {
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:5px;
+}
+.panelchecks7 {
+	display:grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+	gap:0px;
+}
+.panelvirtuetitle {
+	font-size: 17px;
+	font-weight: 700;
+	margin-top: 12px;
+}
+.panelvirtuetitle input{
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.charname input{
+	background-color: #FF000000;
+	border-bottom:1.5px solid;
+	border-color: #bdb6b4;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-radius: 0px 0px 0px 0px;
+	pointer-events: auto;
+}
+.checksnamepan {
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:10px;
+	margin-top:-55px;
+	width:100px;
+}
+.header-fields {
+	display: flex;
+	flex-direction: column;
+}	
+.custom-system-sheet-actions {
+	order:1;
+}
+.custom-system-customHeader {
+	order:3;
+}
+.charname {
+	order:2;
+	width:auto;
+	padding-left:100px;
+	z-index:100;
+	pointer-events: none;
+}
+.panelgiftname {
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:10px;
+}
+.panelequipment {
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:10px;
+	margin-left:10px;
+}
+.notesstyle {
+	color: black;
+	font-size: 15px;
+}
+.chat-message .message-content h1{
+font-family:'MementoMori';
+	font-size:50px;
+	text-align:center;
+	border:0px;
+	margin-top:-10%;
+	margin-bottom:-10%;
+}
+.chat-message .message-content h2{
+font-family:'MementoMori';
+	font-size:40px;
+	text-align:center;
+	border:0px;
+	margin-top:-10%;
+	margin-bottom:-5%;
+}
+.chat-message .message-content p{
+	font-family:'BookAntiqua';
+	font-size:15px;
+	text-align:center;
+	border:0px;
+}
+.dice-roll .dice-formula {
+	display:none;
+}
+.dice-tooltip .part-header {
+	display:none;
+}
+.dice-tooltip .dice-rolls {
+	display: flex;
+ 	justify-content: center;
+}
+.dice-roll .dice-total {
+	display:none;
+}
+hr {
+	display:none;
+}
+.chat-message .message-header {
+	border-bottom:2px solid #671308;
+}
+.chat-message .message-header .message-sender{
+	font-family: 'MementoMori';
+	text-align:center;
+	font-size:40px;
+	text-wrap: wrap;
+	line-height:80%;
+	margin-top:5px;
+	margin-bottom:5px;
+	color: #671308;
+	white-space: normal;
+}
+.message .message-header .message-metadata {
+	flex:0 0 50px;
+	margin-left: 0;
+}
+.message-timestamp {
+	font-family:'BookAntiqua';
+	text-wrap: wrap;
+	font-size:10px;
+}
+.chat-message {
+	background: url(../assets/images/FondoMementoMori2.webp);
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	background-clip: border-box;
+}
+.custom-system-user-inputs  label{
+	font-family: 'BookAntiqua';
+	text-align:center;
+	font-size:17px;
+}
+.custom-system-user-inputs {
+	text-align:center;
+}
+.custom-system-user-inputs thead {
+	display:none;
+}
+.custom-system-user-inputs {
+	background-color: #ff000000;
+	border:0px;
+	color: black;
+}
+.custom-system-user-input-button {
+	font-family:'BookAntiqua';
+	font-size:15px;
+	width:auto;
+    border: 2px ridge black;;
+}
+.custom-system-user-input-button[data-action="sub-10"] {
+	display:none;
+}
+.custom-system-user-input-button[data-action="add-10"] {
+	display:none;
+}
+.custom-system-user-input-block {
+	text-align:center;
+}
+.custom-system-user-inputs tr:nth-child(even) {
+	background-color:  #ff000000;
+}
+.custom-system-user-input-block input[type="checkbox"]{
+	-webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url(../assets/images/Checkbox3.webp);
+	background-size:20px;
+	background-repeat: no-repeat;
+	flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.custom-system-user-input-block input[type="checkbox"]:checked{
+	background: url(../assets/images/Checkbox3_filled.webp);
+	background-size:20px;
+	-webkit-filter: none !important;
+}
+.custom-system-user-input-block input[type="number"] {
+	width:30px;
+	font-family:'BookAntiqua';
+	font-size:15px;
+}
+.custom-system-user-input-block select {
+	width:50px;
+	font-family:'BookAntiqua';
+	font-size:15px;
+	text-align:center;
+}
+.rightpanel{
+	border-left:1.5px solid #bdb6b4;
+}
+.panelboxesnam {
+	font-size:12px;
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:5px;
+	height:15px;
+}
+.pnjstats label {
+	font-family:'MementoMori';
+	font-size:35px;
+}
+.pnjstats input{
+	font-size: 25px;
+	background-color: #FF000000;
+	border-bottom:1.5px solid;
+	border-color: #bdb6b4;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-radius: 0px 0px 0px 0px;
+}
+.panelhp {
+	grid-template-columns: auto 1% auto;
+}
+.panelstat {
+	grid-template-columns: 40% 60%;
+}
+.tachadotext {
+	display:block;
+	background-color: #FF000000;
+	border-bottom:1.5px solid;
+	border-color: black;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	border-radius: 0px 0px 0px 0px;
+	margin-top: -13px;
+}

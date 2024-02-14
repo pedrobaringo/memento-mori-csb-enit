@@ -16,7 +16,7 @@ Foundry VTT module with the templates for the Memento Mori game in English and I
 
 To learn how to install and use it you can see the tutorial in the following link:
 
-
+[![Video del tutorial](http://img.youtube.com/vi/G_zGv9r0wNY/0.jpg)](http://www.youtube.com/watch?v=G_zGv9r0wNY "Tutorial Foundry-Memento Mori")
 
 ## Installation
 To install this module in Foundry you have to use the following Manifest in the modules menu as shown in the image: https://github.com/pedrobaringo/memento-mori-csb-enit/releases/latest/download/module.json

@@ -354,13 +354,12 @@
 	color: black;
 	font-size: 15px;
 }
-.chat-message .message-content h1{
-font-family:'MementoMori';
-	font-size:50px;
-	text-align:center;
-	border:0px;
-	margin-top:-10%;
-	margin-bottom:-10%;
+.chat-message .message-content h1 {
+    font-family: 'MementoMori';
+    font-size: 50px;
+    text-align: center;
+    border: 0px;
+	line-height:90%;
 }
 .chat-message .message-content h2{
 font-family:'MementoMori';

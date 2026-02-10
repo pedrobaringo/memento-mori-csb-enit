@@ -6,6 +6,94 @@
     font-family: "BookAntiqua";
     src: url("../assets/fonts/BKANT.TTF");
 }
+.charname {
+	font-family:'MementoMori';
+	font-weight: normal;
+	margin:0px;
+}
+.charname input[type=text]{
+    font-family: 'MementoMori';
+    font-weight: normal;
+    font-size: 50px;
+}
+.character .grid {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
+	background: url(../assets/images/FondoMementoMori2.webp);
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	font-family:'BookAntiqua';
+	padding:1rem;
+	color: black;
+}
+.character input[type=text], .equippableItem input[type=text], .custom-dialog input[type=text]{
+	box-shadow:0px 0px;
+	color: black;
+    background:transparent;
+}
+.character input[type=number], .equippableItem input[type=number], .custom-dialog input[type=number]{
+	box-shadow:0px 0px;
+	color: black;
+    background:transparent;
+    border:1px solid black;
+}
+.character select, .equippableItem select, .custom-dialog select{
+	background:transparent;
+	color: black;
+    border:1px solid black;
+}
+.custom-system-user-inputs td button {
+    color: black;
+}
+.character summary:before, .equippableItem summary:before, .custom-dialog summary:before {
+	border-color: transparent transparent transparent #000000;
+}
+.character input[type="checkbox"]::before, .equippableItem input[type="checkbox"]::before, .custom-dialog input[type="checkbox"]::before {
+    content:"";
+}
+.character  input[type="checkbox"]:checked::after, .equippableItem  input[type="checkbox"]:checked::after, .custom-dialog  input[type="checkbox"]:checked::after {
+    content: "";
+}
+.character input[type="checkbox"]:checked::before, .equippableItem input[type="checkbox"]:checked::before,  .custom-dialog input[type="checkbox"]:checked::before {
+    content: "";
+}
+.custom-dialog .form-group > label {
+	color: black;
+}
+.character table, .equippableItem table, .custom-dialog table {
+	background:transparent;
+}
+.custom-system-number-field-control {
+	background:transparent;
+	color:black;
+	border:1px solid black;
+}
+.character input[type="radio"]::before, .equippableItem input[type="radio"]::before, .custom-dialog input[type="radio"]::before {
+    content:"\f10c";
+    color: black;
+    font-weight:normal;
+}
+.character input[type="radio"]:checked::before, .character  input[type="radio"]:checked::after, .equippableItem input[type="radio"]:checked::before,  .equippableItem  input[type="radio"]:checked::after, .custom-dialog input[type="radio"]:checked::before, .custom-dialog  input[type="radio"]:checked::after {
+    content: "\f192";
+    color: black;
+}
+.character .content-link, .equippableItem .content-link, .custom-dialog .content-link {
+  background:transparent;
+  color: black;
+  border: 0px;
+}
+.custom-system-user-input-button {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px groove black;
+    color: black
+}
+.custom-dialog .standard-form .form-footer > button {
+  color:black;
+  background:transparent;
+  border: 2px groove black;
+}				  
 .dice-tooltip{
     display:block !important;
 }
@@ -26,12 +114,6 @@
 }
 .dice-tooltip .dice-rolls .roll.min {
 	filter: none;
-}
-.window-app .window-content {
-	background: url(../assets/images/FondoMementoMori2.webp);
-	background-repeat: no-repeat;
- 	background-size: 100% 100%;
-	font-family:'BookAntiqua';
 }
 .custom-system-actor-content {
 	padding:20px;
@@ -62,7 +144,7 @@
 	border-bottom: 2px solid #bdb6b4;
 }
 .imageorgans{
-	height:150px;
+	min-height:150px;
 	margin-top:10px;
 	margin-left:0px;
 }
@@ -115,7 +197,7 @@
 	margin:5px;
 	gap:0px;
 }
-.panelchecks1 {
+.panelchecks1  > :first-child{
 	display:grid;
 	grid-template-columns: auto auto auto;
 	gap:0px;
@@ -126,11 +208,11 @@
 .panelblood {
 	margin-top: 30px;
 }
-.panelmarkdream {
+.panelmarkdream  > :first-child {
 	display:grid;
 	grid-template-columns: 10% 85%;
 }
-.panelmarkdreamita {
+.panelmarkdreamita  > :first-child{
 	display:grid;
 	grid-template-columns: 15% 80%;
 }
@@ -168,7 +250,7 @@
 	margin:2px;
 	gap:0px;
 }
-.panelstigma {
+.panelstigma  > :first-child{
 	display:grid;
 	grid-template-columns: auto auto;
 }
@@ -189,7 +271,7 @@
 	border-color: #bdb6b4;
 	border-radius: 0px 0px 0px 5px;
 }
-.panelchecks2 {
+.panelchecks2  > :first-child{
 	display:grid;
 	grid-template-columns: auto auto auto auto;
 	gap:0px;
@@ -238,13 +320,13 @@
 	margin:2px;
 	gap:0px;
 }
-.panelboxes {
+.panelboxes > :first-child{
 	font-size:12px;
 	display:grid;
 	grid-template-columns: auto auto;
 	gap:5px;
 }
-.panelbond {
+.panelbond > :first-child{
 	display:grid;
 	grid-template-columns: auto 40% 44%;
 	gap:5px;
@@ -285,12 +367,12 @@
 	font-size: 20px;
 	align-items:flex-start;
 }
-.panelgift {
+.panelgift > :first-child{
 	display:grid;
 	grid-template-columns: auto auto;
 	gap:5px;
 }
-.panelchecks7 {
+.panelchecks7 > :first-child{
 	display:grid;
 	grid-template-columns: auto auto auto auto auto auto auto;
 	gap:0px;
@@ -315,7 +397,7 @@
 	border-radius: 0px 0px 0px 0px;
 	pointer-events: auto;
 }
-.checksnamepan {
+.checksnamepan > :first-child{
 	display:grid;
 	grid-template-columns: auto auto;
 	gap:10px;
@@ -339,12 +421,12 @@
 	z-index:100;
 	pointer-events: none;
 }
-.panelgiftname {
+.panelgiftname > :first-child{
 	display:grid;
 	grid-template-columns: auto auto;
 	gap:10px;
 }
-.panelequipment {
+.panelequipment > :first-child{
 	display:grid;
 	grid-template-columns: auto auto;
 	gap:10px;
@@ -360,14 +442,14 @@
     text-align: center;
     border: 0px;
 	line-height:90%;
+	font-weight: normal;				 
 }
 .chat-message .message-content h2{
 font-family:'MementoMori';
 	font-size:40px;
 	text-align:center;
 	border:0px;
-	margin-top:-10%;
-	margin-bottom:-5%;
+	font-weight:normal;
 }
 .chat-message .message-content p{
 	font-family:'BookAntiqua';
@@ -420,41 +502,41 @@ hr {
  	background-size: 100% 100%;
 	background-clip: border-box;
 }
-.custom-system-user-inputs  label{
+.application .custom-system-user-inputs  label{
 	font-family: 'BookAntiqua';
 	text-align:center;
 	font-size:17px;
 }
-.custom-system-user-inputs {
+.application .custom-system-user-inputs {
 	text-align:center;
 }
-.custom-system-user-inputs thead {
+.application .custom-system-user-inputs thead {
 	display:none;
 }
-.custom-system-user-inputs {
+.application .custom-system-user-inputs {
 	background-color: #ff000000;
 	border:0px;
 	color: black;
 }
-.custom-system-user-input-button {
+.application .custom-system-user-input-button {
 	font-family:'BookAntiqua';
 	font-size:15px;
 	width:auto;
     border: 2px ridge black;;
 }
-.custom-system-user-input-button[data-action="sub-10"] {
+.custom-system-user-input-button[data-inputaction="sub-10"] {
 	display:none;
 }
-.custom-system-user-input-button[data-action="add-10"] {
+.custom-system-user-input-button[data-inputaction="add-10"] {
 	display:none;
 }
-.custom-system-user-input-block {
+.application .custom-system-user-input-block {
 	text-align:center;
 }
-.custom-system-user-inputs tr:nth-child(even) {
+.application .custom-system-user-inputs tr:nth-child(even) {
 	background-color:  #ff000000;
 }
-.custom-system-user-input-block input[type="checkbox"]{
+.application .custom-system-user-input-block input[type="checkbox"]::before{
 	-webkit-appearance: initial;
     appearance: initial;
 	margin:0px;
@@ -466,17 +548,34 @@ hr {
     height: 20px;
     cursor: pointer;
 }
-.custom-system-user-input-block input[type="checkbox"]:checked{
+.application .custom-system-user-input-block input[type="checkbox"]:checked::before{
 	background: url(../assets/images/Checkbox3_filled.webp);
 	background-size:20px;
 	-webkit-filter: none !important;
 }
-.custom-system-user-input-block input[type="number"] {
+.application .custom-system-user-input-block input[type="checkbox"]::after{
+	-webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url(../assets/images/Checkbox3.webp);
+	background-size:20px;
+	background-repeat: no-repeat;
+	flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.application .custom-system-user-input-block input[type="checkbox"]:checked::after{
+	background: url(../assets/images/Checkbox3_filled.webp);
+	background-size:20px;
+	-webkit-filter: none !important;
+}
+.application .custom-system-user-input-block input[type="number"] {														   
 	width:30px;
 	font-family:'BookAntiqua';
 	font-size:15px;
 }
-.custom-system-user-input-block select {
+.application .custom-system-user-input-block select {
 	width:50px;
 	font-family:'BookAntiqua';
 	font-size:15px;
@@ -485,7 +584,7 @@ hr {
 .rightpanel{
 	border-left:1.5px solid #bdb6b4;
 }
-.panelboxesnam {
+.panelboxesnam > :first-child{
 	font-size:12px;
 	display:grid;
 	grid-template-columns: auto auto;
@@ -506,10 +605,10 @@ hr {
 	border-right:0px;
 	border-radius: 0px 0px 0px 0px;
 }
-.panelhp {
+.panelhp > :first-child{
 	grid-template-columns: auto 1% auto;
 }
-.panelstat {
+.panelstat > :first-child{
 	grid-template-columns: 40% 60%;
 }
 .tachadotext {
@@ -523,3 +622,193 @@ hr {
 	border-radius: 0px 0px 0px 0px;
 	margin-top: -13px;
 }
+.panelintro {
+	position:relative;
+}
+.introtextcss {
+	position:absolute;
+	font-family:'BookAntiqua';
+	top:15px;
+	left:10px;
+	width:40%;
+	background-color:white;
+}
+.introtextcss p{
+	font-family:'BookAntiqua';
+	font-size:15px;
+}
+.marginzero {
+	margin:0px;
+}
+.textspact {
+	font-family:'BookAntiqua';
+	font-size:15px;
+}
+.preguntastext {
+	font-weight:700;
+}
+.panelpregunta {
+	gap:0px;
+}
+.panelpactchecks  > :first-child{
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:0px;
+}
+.checkboxpacto input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    margin: 0px;
+    background: url(../assets/images/Checkbox1.webp);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    flex: 0 0 25px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.checkboxpacto input[type="checkbox"]:checked {
+    background: url(../assets/images/Checkbox1_filled.webp);
+    background-size: 25px;
+    -webkit-filter: none !important;
+}
+.tabmarcas table{
+	background:transparent;
+	border:0px;
+}
+.tabmarcas table tr{
+	display:grid;
+	grid-template-columns: auto 5%;
+}
+.tabmarcas table tr td:nth-child(1){
+	order:1;
+	grid-column: 1/span 1;
+}
+.tabmarcas table tr td:nth-child(2){
+	order:3;
+	grid-column: 1/span 2;
+}
+.tabmarcas table tr td:nth-child(3){
+	order:4;
+	grid-column: 1/span 2;
+	border-bottom:1px solid black;
+}
+.tabmarcas table tr td:nth-child(4){
+	order:2;
+	grid-column: 2/span 1;
+}
+.tabmarcas table tr:first-child{
+	display:none;
+}
+.marcaname input[type="text"]{
+	background:transparent;
+	border-radius:0px;
+	border-width:0px 0px 1px 0px;
+	font-weight:700;
+	font-size:16px;
+}
+.descmarca p{
+	margin:0px;
+}
+.keymarca p{
+	margin:0px;
+}
+.marginpreguntas {
+	margin-top:10px;
+}
+.checkboxpacto {
+	align-items: flex-start;
+	margin-top:5px;
+}
+.marginzero {
+	margin:0px;
+}
+.checkverdfinwhite {
+	width:35px;
+	height:35px;
+}
+.smallertitle {
+	font-size:30px;
+}
+.numinput input {
+    background-color: #FF000000;
+    border-bottom: 1.5px solid;
+    border-color: #bdb6b4;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px 0px 0px 0px;
+}
+.panelverdfinal  > :first-child{
+	display:grid;
+	gap:0px;
+	grid-template-columns: 10% 40% 10% 40%;
+}
+.panelsubfinal  > :first-child{
+	display:grid;
+	gap:10%;
+	grid-template-columns: 40% 40%
+}
+.gapzero  > :first-child{
+	display:grid;
+	gap:0px;
+}
+.craneoimg {
+	max-width:70%;
+	margin-top:20px;
+}
+.tachadotextlarge p{
+	text-decoration: line-through;
+}
+.window-app .window-content img {
+	border:0px;
+}
+.sheet.journal-entry .journal-entry-page h1{
+	font-family:'MementoMori';
+	font-size:35px;
+	height:55px;
+}
+.sheet.journal-entry .journal-entry-page h2{
+	font-family:'MementoMori';
+	font-size:30px;
+	height:50px;
+}
+.sheet.journal-entry .journal-entry-page h3{
+	font-family:'MementoMori';
+	font-size:25px;
+	height:40px;
+}
+.markpanelimage  > :first-child{
+	display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 5px;
+}
+.sheet header.sheet-header .markimage img {
+	display:block;
+	object-fit: cover;
+	width:auto;
+	height:50px;
+}
+.panelmarkdream  > :first-child{
+    display: grid;
+    grid-template-columns: 15% 80%;
+}
+.panelmarkdreamdream  > :first-child{
+	display: grid;
+    grid-template-columns: 10% 90%;
+}
+.dreaminput {
+	margin-top:2px;
+}
+.markinput input {
+    background-color: #FF000000;
+    border-bottom: 1.5px solid;
+    border-color: #bdb6b4;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px 0px 0px 0px;
+}
+.introtextcss {
+	padding:5px 15px;
+}		 

@@ -361,7 +361,7 @@
 	font-weight: 700;
 }
 .panelkey {
-	margin-top: 19px;
+	margin-top: 12px;
 }
 .titlegift {
 	font-weight:700;
@@ -402,7 +402,7 @@
 	display:grid;
 	grid-template-columns: auto auto;
 	gap:10px;
-	margin-top:-55px;
+	margin-top:-65px;
 	width:100px;
 }
 .header-fields {
@@ -545,9 +545,12 @@ hr {
 	background-size:20px;
 	background-repeat: no-repeat;
 	flex: 0 0 20px;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     cursor: pointer;
+	display:block;
+	border-radius:0px;
+	border:0px;
 }
 .application .custom-system-user-input-block input[type="checkbox"]:checked::before{
 	background: url(../assets/images/Checkbox3_filled.webp);
@@ -570,6 +573,7 @@ hr {
 	background: url(../assets/images/Checkbox3_filled.webp);
 	background-size:20px;
 	-webkit-filter: none !important;
+	display:block;
 }
 .application .custom-system-user-input-block input[type="number"] {														   
 	width:30px;

@@ -1,4 +1,4 @@
-export class MMWhite extends Die {
+export class MMWhite extends foundry.dice.terms.Die {
     constructor(termData) {
         termData.faces=6;
         super(termData);
@@ -21,7 +21,7 @@ export class MMWhite extends Die {
     }
 }
 
-export class MMBlack extends Die {
+export class MMBlack extends foundry.dice.terms.Die {
     constructor(termData) {
         termData.faces=6;
         super(termData);

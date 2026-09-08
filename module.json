@@ -1,10 +1,10 @@
 {
   "id": "memento-mori-csb-enit",
   "title": "Memento Mori (CSB) (EN/IT)",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "compatibility": {
     "minimum": "13.351",
-    "verified": "13.351"
+    "verified": "14"
   },
   "relationships": {
     "systems": [
@@ -13,7 +13,7 @@
         "type": "system",
         "compatibility": {
 		"minimum": "5.1.0",
-		"verified": "5.1.0"
+		"verified": "6.0.2"
 		}
       }
     ],
@@ -57,5 +57,5 @@
   ],
   "url": "https://github.com/pedrobaringo/memento-mori-csb-enit",
   "manifest": "https://github.com/pedrobaringo/memento-mori-csb-enit/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/memento-mori-csb-enit/releases/download/1.2.0/memento-mori-csb-enit.zip"
+  "download": "https://github.com/pedrobaringo/memento-mori-csb-enit/releases/download/1.2.1/memento-mori-csb-enit.zip"
 }

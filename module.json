@@ -1,10 +1,11 @@
 {
   "id": "memento-mori-csb-enit",
   "title": "Memento Mori (CSB) (EN/IT)",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "compatibility": {
-    "minimum": "13.351",
-    "verified": "14"
+    "minimum": "13",
+    "verified": "14",
+    "maximum": "14"
   },
   "relationships": {
     "systems": [
@@ -12,9 +13,9 @@
         "id": "custom-system-builder",
         "type": "system",
         "compatibility": {
-		"minimum": "5.1.0",
-		"verified": "6.0.2"
-		}
+          "minimum": "6.1.2",
+          "verified": "6.1.2"
+        }
       }
     ],
     "recommends": [
@@ -28,18 +29,20 @@
   "authors": [
     {
       "name": "Pedro Baringo",
-	  "url": "https://github.com/pedrobaringo",
-	  "discord": "pedrobari",
-	  "github": "pedrobaringo",
+      "url": "https://github.com/pedrobaringo",
+      "discord": "pedrobari",
+      "github": "pedrobaringo",
       "flags": {}
     }
   ],
   "esmodules": [
-		"./modules/mementomori.js",
-   "./modules/welcomemessage.js"
-	],
- "styles": [
-    "./assets/MementoMori.css"
+    "modules/mementomori.js",
+    "modules/welcomemessage.js"
+  ],
+  "styles": [
+    {
+      "src": "assets/MementoMori.css"
+    }
   ],
   "packs": [
     {
@@ -57,5 +60,7 @@
   ],
   "url": "https://github.com/pedrobaringo/memento-mori-csb-enit",
   "manifest": "https://github.com/pedrobaringo/memento-mori-csb-enit/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/memento-mori-csb-enit/releases/download/1.2.2/memento-mori-csb-enit.zip"
+  "download": "https://github.com/pedrobaringo/memento-mori-csb-enit/releases/download/1.2.3/memento-mori-csb-enit.zip",
+  "description": "",
+  "flags": {}
 }
